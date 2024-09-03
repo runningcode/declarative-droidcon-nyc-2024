@@ -1,6 +1,6 @@
 # Building the slides
 
-The build requires a JDK 17 with JavaFX bundled.
+The build requires a JDK 21 with JavaFX bundled.
 
 ```shell
 # Produce HTML slides

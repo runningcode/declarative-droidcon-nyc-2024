@@ -9,9 +9,24 @@ plugins {
     id("org.ajoberstar.git-publish") version "4.1.1"
 }
 
+buildscript {
+    dependencies {
+        classpath("org.ysb33r.gradle:grolifant:0.12.1")
+    }
+    configurations {
+        classpath {
+             resolutionStrategy {
+                dependencySubstitution {
+                    substitute(module("com.burgstaller:okhttp-digest")).using(module("io.github.rburgst:okhttp-digest:1.21"))
+                }
+            }
+        }
+    }
+}
+
 repositories {
     mavenCentral()
-    maven(url = "https://jcenter.bintray.com/") {
+    maven(url = "https://repo.gradle.org/artifactory/jcenter-backup/") {
         content {
             includeModule("me.champeau.deck2pdf", "deck2pdf")
         }
