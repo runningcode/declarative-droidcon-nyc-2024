@@ -7,15 +7,14 @@ image::gradle/bg-4.png[background,size=cover]
 
 [.notes]
 --
-Speaker Sterling
+
 --
 
 === We need your help and feedback 🙌
-
 image::gradle/bg-4.png[background,size=cover]
 
+* Read our latest link:https://blog.gradle.org/declarative-gradle-first-eap[blog post]
 * Visit link:https://declarative.gradle.org[declarative.gradle.org] site
-* Explore link:https://github.com/gradle/declarative-gradle[gradle/declarative-gradle] repository
 * Join Gradle's https://gradle.org/slack-invite[Community Slack] +
   [.small]#`#declarative-gradle`#
 * Share your thoughts and use cases with us

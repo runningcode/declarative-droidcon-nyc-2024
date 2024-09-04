@@ -8,12 +8,15 @@ image::gradle/bg-7.png[background, size=cover]
 --
 
 === Challenges &#x1F525;
-image::gradle/bg-7.png[background, size=cover]
+image::gradle/bg-11.png[background, size=cover]
 
 Build language 
 
+[no-bullet]
 * &#x1F44D; Highly flexible, extensible, and fully adaptable to the most complex requirements 
 * &#x1F44D; Appreciated by advanced users
+
+//-
 
 * &#x1F44E; Significant learning curve 
 * &#x1F44E; Projects often look very different from one another 
@@ -53,73 +56,40 @@ Where does anything come from?
 Footguns
 --
 
-=== Challenges [.small]#- Jeg taler Gradle#
+=== Challenges &#x1F525;
 image::gradle/bg-7.png[background, size=cover]
+
+Simple builds configure low-level details.
 
 `build.gradle.kts`
 ```kotlin
 plugins {
-    java
+   id("application")
 }
 
-repositories {
-    mavenCentral()
+application.mainClass = "com.example.Main"
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
 }
 
 dependencies {
-    testImplementation(libs.junit.jupiter)
-
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-
-    api(libs.commons.math3)
-
-    implementation(libs.guava)
+    implementation("com.google.guava:guava:31.0-jre")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.10.2")
 }
 
 tasks.named<Test>("test") {
-    useJUnitPlatform()
-}
-```
-
-[.notes]
---
-I'm building a Java what?
-What's a repository?
-What's a task?
-I'm using JUnit5, I guess that's like JUnit platform?
---
-
-=== Challenges [.small]#- Gauntlet for toolability#
-image::gradle/bg-7.png[background, size=cover]
-
-`build.gradle.kts`
-```kotlin
-android {
-    namespace = "com.example.${project.name}"
-}
-
-dependencies {
-    testImplementation(libs.junit.jupiter)
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher")    
-
-    api(libs.commons.math3)
-
-    if (!buildingForJava17()) {
-        implementation(libs.java17CompatibilityShim)
-    } 
-    
-    implementation(libs.guava)
-
-    listOf("foo", "bar").forEach { name ->
-        implementation("org:${name}:1.0")
+    javaLauncher = javaToolchains.launcherFor {
+        languageVersion = JavaLanguageVersion.of(17)
     }
-
 }
-
-fun buildingForJava17() = JavaVersion.current() == JavaVersion.VERSION_17
 ```
 
 [.notes]
 --
-Very hard for tooling to modify or provide assistance
+This looks code-like.
+What's the difference between implementation and testImplementation?
+What's a javaLauncher?
 --

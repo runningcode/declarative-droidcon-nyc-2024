@@ -1,31 +1,45 @@
-=== Current prototypes [.small]#- Software definition#
+=== Software types [.small]#- Prototypes#
 image::gradle/bg-7.png[background, size=cover]
 
 * Software types for Kotlin (KMP), JVM (Kotlin, Java) & Android
-   - Software type is a high level model for the ecosystem
-* Wraps around existing plugins 
-* Limited configurability just to explore/experiment
-* No plugin application in project DCL files
+** Software type is a high level model for the ecosystem
+* Evolution of convention plugins
+** Wraps around existing plugins 
+* Plugin application is not allowed in project DCL files
 
 [.notes]
 --
-Speaker Sterling
+We currently have prototype plugins that represent new configuration models for KMP, JVM and Android.
 --
 
-=== Current prototypes [.small]#- Reusable conventions#
+=== Software types [.small]#- Higher-level model#
+image::gradle/bg-7.png[background, size=cover]
+
+* Software types work in the software developers domain language
+** `androidLibrary {}` vs `android {}` 
+** No access to low-level implementation details (tasks, configurations)
+** Context-based names vs magic names
+
+[.notes]
+--
+Test suites follow a similar pattern.
+Instead of adding dependencies to "testImplementation" you add your implementation dependencies inside a testing block.
+--
+
+=== Software types [.small]#- Reusable conventions#
 image::gradle/bg-7.png[background, size=cover]
 
 * Reusable conventions support sharing common configuration 
    - Properties
    - Dependencies
-* Declared at the top-level settings DCL file
+* Declared at the top-level `settings.gradle.dcl` file
 
-=== Current prototypes [.small]#- Software types - Demo#
+=== Software types [.small]#- Example#
 image::gradle/bg-7.png[background, size=cover]
 
 `settings.gradle.dcl`
 ```kotlin
-conventions {
+defaults {
     kotlinJvmLibrary {
         javaVersion = 21
     }
@@ -44,5 +58,11 @@ kotlinJvmLibrary {
 
 [.notes]
 --
-Switch to IDE with NiA
+
 --
+
+=== Software types [.small]#- Android Example#
+image::gradle/bg-7.png[background, size=cover]
+
+link:https://github.com/gradle/declarative-samples-android-app/blob/main/settings.gradle.dcl[Declarative Android app]
+

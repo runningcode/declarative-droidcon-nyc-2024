@@ -6,11 +6,19 @@ image::gradle/bg-4.png[background,size=cover]
 🚀
 [.notes]
 --
-Speaker Paul
+
 --
 
 === Where do we want to go? 🚀
+image::gradle/bg-4.png[background,size=cover]
 
+Declarative Gradle...
+
+* is an experiment to demonstrate the evolution of Gradle build authoring based on existing best practices and addresses current challenges
+* consists of Declarative Configuration Language based on Kotlin and developer-first software definition based on software types
+* provides a way to improve tooling for Gradle, especially the IDE experience 
+
+=== Where do we want to go? 
 image::gradle/bg-4.png[background,size=cover]
 
 > Elegant and extensible declarative build language that allows developers to describe any kind of software in a clear and understandable way.
@@ -20,21 +28,15 @@ and more ...
 * Pluggable mutations/refactorings
 * Excellent IDE support
 
-=== Transition
-
-* You can mix imperative and declarative in a build
-* Gradle imperative DSLs don't go away
-* Software-types will be usable from imperative DSLs
-* We are exploring ways and tooling for incremental migration
-
 === Roadmap [.small]#- Highly speculative#
 
-* First EAP this summer
-** Demonstrating what we just talked about
-** Early feedback from the community
-
-* 2024-H2
-** More EAPs towards the end of the year
-** More features
+* First EAP released in July
+* Second EAP (likely October)
+** AGP integration 
 ** Addressing collected feedback
 ** Further feedback from the community
+
+* 2024 EOY
+** More EAPs 
+** More features
+** Guidance from the community 

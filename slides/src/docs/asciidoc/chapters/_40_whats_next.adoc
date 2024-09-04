@@ -1,47 +1,52 @@
 [background-color="#02303a"]
 == What's next? &#x1F52E;
-
 image::gradle/bg-4.png[background,size=cover]
 
 A peak into the future
 
-=== What's next? [.small]#- Mutations / Refactorings#
-
+=== What's next? [.small]#- AGP support#
 image::gradle/bg-4.png[background,size=cover]
 
-* Gradle guided changes available from tooling and command-line
-* Integrated with IDE workflow (preview/diff, undo)
-* Provided out of the box by Gradle or registered by plugins
+* Working with Android to get AGP into DCL
+* Simple existing DSLs will "just work"
+* Some new DSLs will be added to support DCL
+** Named domain object containers
+** Enums
 
-=== What's next? [.small]#- Mutations / Refactorings#
-
+=== What's next? [.small]#- Composability#
 image::gradle/bg-4.png[background,size=cover]
 
-Examples
+* Composability and extensibility very important
+** There is a small number of base software types
+** Additional, optional features can be "mixed-in" to a software type
+* e.g., `androidApplication` does not need Compose or Hilt built-in
+** Enabling compose applies the appropriate plugin and adds to the software type
+** Defaults for Compose/Hilt can be defined and reused across software types
 
-* Upgrade an external dependency
-* Add Compose to this project
-* Update Gradle from 9.0 -> 9.1
-* Refactor this project to use non-deprecated properties
-
-=== What's next? [.small]#- Quick and resilient IDE sync#
-
+=== What's next? [.small]#- Migrations#
 image::gradle/bg-4.png[background,size=cover]
 
-* Progressively provide more context +
-  instead of a monolithic sync step.
-* Avoid slow recompilation of build scripts when build logic changes. +
-  Reparsing declarative files is fast.
-* Errors in a declarative file don't need to be fatal to sync +
-  Best effort: know what "kind" of project it is at least.
+* You can mix imperative and declarative in a build
+* Software-types will be usable from imperative DSLs
+* You can define defaults in settings and apply them in DCL/non-DCL files
+* Gradle imperative DSLs don't go away
+* Syntax overlap between DCL and KTS files make it easier to prepare
+* Using convention plugins as software types will prepare for migration
 
+[.notes]
+--
+Open questions:
 
-=== What's next? [.small]#- Other IDEs#
+* When will ecosystem plugins be ready/have migrated?
+* How will plugin authors adapt/migrate?
+** Same programming/annotation model as project extensions/tasks
+** Possibility to reuse existing project extensions
+--
+
+=== What's next? [.small]#- Other#
 image::gradle/bg-4.png[background, size=cover]
 
-* We want all features to be available to most IDEs
-* We're working with JetBrains and Google for their IDEs
 * Our IDE team is exploring
 ** LSP language server & BSP build server
 ** plugins for both Eclipse/Buildship and Visual Studio Code
-* LSP & BSP should allow to add support in many other IDEs
+* `gradle init` will soon support generating example builds using DCL

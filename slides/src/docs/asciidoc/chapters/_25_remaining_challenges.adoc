@@ -1,0 +1,24 @@
+[background-color="#02303a"]
+== Remaining challenges
+image::gradle/bg-7.png[background, size=cover]
+
+🏃
+
+=== Remaining challenges 
+image::gradle/bg-11.png[background,size=cover]
+
+* Build language can be hard for non-expert Gradle users to understand.
+* Little/no consistency between ecosystems and even projects in the same ecosystem.
+* No enforcement mechanism to keep build files simple and declarative
+* Arbitrary code in build scripts limit what tools can do
+
+**We want to help software developers.**
+
+=== Remaining challenges [.small]#- The experiment 🧪#
+image::gradle/bg-7.png[background,size=cover]
+
+Declarative Gradle
+
+a/k/a Developer-first builds
+
+A fundamental user experience advancement for software developers using Gradle.

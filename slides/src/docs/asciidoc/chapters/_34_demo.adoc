@@ -1,10 +1,22 @@
 [background-color="#02303a"]
-== Demo
+== Demos
 image::gradle/bg-1.png[background, size=cover]
 [.notes]
 --
-* You may wonder what the relationship between this and Amper
-* Amper is an experiment with similar goals that we are also learning from to inform our development.
-* Our approach is to greatly simplify build configuration with a focus on Software Developers and improved toolability without sacrificing any of Gradle's flexibility or scalability.
-* We're confident we can deliver on this vision and that you won't even need Amper.
+
 --
+
+=== Demos [.small]#- Basics#
+image::gradle/bg-4.png[background,size=cover]
+
+video::POjnWOwWqco[youtube]
+
+=== Demos [.small]#- Two-way tooling#
+image::gradle/bg-4.png[background,size=cover]
+
+video::0PBQ2gbQfjU[youtube]
+
+=== Demos [.small]#- Mutations#
+image::gradle/bg-4.png[background,size=cover]
+
+video::pYuVFtfMNzM[youtube]
