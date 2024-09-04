@@ -10,5 +10,5 @@ The build requires a JDK 21 with JavaFX bundled.
 ./gradlew --continuous :slides:asciidoctorRevealJs
 
 # Produce PDF slides
-./gradlew :slides:kotlinConfPdf
+./gradlew :slides:presentationPdf
 ```

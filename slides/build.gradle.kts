@@ -176,7 +176,7 @@ tasks {
         }
     }
     val pdfTasks = listOf(
-        "kotlinConfPdf" to "2024-kotlinconf",
+        "presentationPdf" to "presentation",
     ).map { (taskName, htmlFilename) ->
         register(taskName, Deck2Pdf::class) {
             dependsOn(asciidoctorRevealJs)
