@@ -2,23 +2,56 @@
 == Challenges &#x1F525;
 image::gradle/bg-7.png[background, size=cover]
 
-Gradle is flexible and extensible +
-Drawbacks
-
 [.notes]
 --
-Speaker Sterling
+
 --
 
 === Challenges &#x1F525;
 image::gradle/bg-7.png[background, size=cover]
 
-Gradle is flexible and extensible +
-Drawbacks
+Build language 
 
-* Build scripts speak Gradle and not your domain.
-* Build scripts can be a mess.
-* Tooling can only help so much.
+* Highly flexible, extensible, and fully adaptable to the most complex requirements &#x1F44D;
+* Appreciated by advanced users &#x1F44D;
+
+* Significant learning curve &#x1F44E;
+* Projects often look very different from one another &#x1F44E;
+
+=== Challenges &#x1F525;
+image::gradle/bg-7.png[background, size=cover]
+
+Flexible + extensible = build scripts can get messy.
+
+`build.gradle.kts`
+```kotlin
+plugins {
+    id("my-conventions")
+}
+
+apply {
+    from("dependencies.gradle.kts")
+}
+
+tasks.named<Test>("test") {
+    useJUnitPlatform()
+    jvmArgs "-Dsamples=${projectDir.absolutePath}/samples"
+}
+
+... 500 lines ...
+
+tasks.named<Test>("test") {
+    useJUnitPlatform {
+        includeTags("Fast")
+    }
+}
+```
+
+[.notes]
+--
+Where does anything come from?
+Footguns
+--
 
 === Challenges [.small]#- Jeg taler Gradle#
 image::gradle/bg-7.png[background, size=cover]
@@ -54,39 +87,6 @@ I'm building a Java what?
 What's a repository?
 What's a task?
 I'm using JUnit5, I guess that's like JUnit platform?
---
-
-=== Challenges [.small]#- &#x2622;#
-image::gradle/bg-7.png[background, size=cover]
-
-`build.gradle.kts`
-```kotlin
-plugins {
-    id("my-conventions")
-}
-
-apply {
-    from("dependencies.gradle.kts")
-}
-
-tasks.named<Test>("test") {
-    useJUnitPlatform()
-    jvmArgs "-Dsamples=${projectDir.absolutePath}/samples"
-}
-
-... 500 lines ...
-
-tasks.named<Test>("test") {
-    useJUnitPlatform {
-        includeTags("Fast")
-    }
-}
-```
-
-[.notes]
---
-Where does anything come from?
-Footguns
 --
 
 === Challenges [.small]#- Gauntlet for toolability#

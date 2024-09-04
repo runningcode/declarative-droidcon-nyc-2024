@@ -8,13 +8,14 @@
 
 = Developer-first Gradle builds
 
-Sterling Greene & Paul Merlin
+a/k/a Declarative Gradle
 
-image::kotlinconf/logo-kotlinconf.png[width=100%, align="right"]
+TODO: Add logos
+// image::kotlinconf/logo-kotlinconf.png[width=100%, align="right"]
 
-include::chapters/_01_agenda_kotlinconf.adoc[]
+include::chapters/_01_agenda.adoc[]
 
-include::chapters/_02_who_kotlinconf.adoc[]
+include::chapters/_02_who_sterling_paul.adoc[]
 
 include::chapters/_03_who_gradle.adoc[]
 
@@ -42,4 +43,4 @@ include::chapters/_50_where_we_go.adoc[]
 
 include::chapters/_60_call_to_action.adoc[]
 
-include::chapters/_99_thank_you_kotlinconf.adoc[]
+include::chapters/_99_thank_you.adoc[]

@@ -17,18 +17,6 @@ a|image::logo-gradle-elephant.svg[]
 a|image::logo-gradle-elephant-outline.svg[]
 |===
 
-
-[%notitle]
-=== Gradle Build Tool
-image::gradle/bg-1.png[background, size=cover]
-
-image::logo-gradle-build-tool.svg[role=product-logo-as-title]
-
-https://github.com/gradle/gradle/blob/master/LICENSE[Apache] licenced sofware build tool
-
-With 50M+ monthly downloads and one of the top 20 popular open source projects according to https://techcrunch.com/2017/04/07/tracking-the-explosive-growth-of-open-source-software/[TechCrunch].
-
-
 [%notitle]
 === Develocity
 image::gradle/bg-1.png[background, size=cover]
@@ -68,22 +56,6 @@ observability: scans, performance trends, test dashboard etc... +
 acceleration: build-cache, test distribution, predictive test selection etc..
 --
 
-
-=== Build Scan®
-image::gradle/bg-1.png[background, size=cover]
-
-A permanent record of what happens during a build.
-
-image::buildscan-example.png[]
-
-image:build-scan-link.svg[link=https://ge.gradle.org/s/5tpk266tnimuo]
-
-[.notes]
---
-We will use build scans during this task to illustrate some points.
---
-
-
 === Developer Productivity Engineering
 image::gradle/bg-1.png[background, size=cover]
 
@@ -119,12 +91,34 @@ Two shows
 How Netflix, Google, Slack, LinkedIn and other teams do DPE?
 --
 
-=== NEW: DPE University 🎓
+=== DPE University 🎓
 
 image::gradle/bg-4.png[background,size=cover]
 
 image::dpeu/cover.png[width=60%]
 
 * Free courses at https://dpeuniversity.gradle.com/app[dpeuniversity.gradle.com]
-* 6 Gradle courses - from Beginner to Advanced levels
-* More courses on Maven, Develocity etc...
+* Courses on Develocity and Maven
+
+[%notitle]
+=== Gradle Build Tool
+image::gradle/bg-1.png[background, size=cover]
+
+image::logo-gradle-build-tool.svg[role=product-logo-as-title]
+
+https://github.com/gradle/gradle/blob/master/LICENSE[Apache] licenced sofware build tool
+
+With 50M+ monthly downloads, one of the top 20 popular open source projects according to https://techcrunch.com/2017/04/07/tracking-the-explosive-growth-of-open-source-software/[TechCrunch].
+
+Default for Android development and one of the most popular build tools on GitHub.
+
+=== Our Vision
+
+Gradle Build Tool is an open-source build system that automates the process of building software of any type, size, or complexity in a fast and reliable manner. 
+
+What sets Gradle Build Tool apart is its **elegant and extensible declarative build language that enables expressing any build in a clear and understandable way**.
+
+[.notes]
+--
+aspirational
+--
