@@ -10,9 +10,7 @@
 
 a/k/a Declarative Gradle
 
-TODO: Fix logo
-
-image::logo-android-exchange.png[width=100%, align="right"]
+image::logo-android-exchange.png[width=60%, align="right"]
 
 include::chapters/_01_agenda.adoc[]
 
