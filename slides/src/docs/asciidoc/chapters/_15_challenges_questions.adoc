@@ -1,7 +1,0 @@
-
-[background-color="#02303a"]
-== Questions 🖐️
-image::gradle/bg-1.png[background, size=cover]
-
-* Who has needed a flexible and extensible build system?
-* Who has seen a complex build?

@@ -12,8 +12,6 @@ image::gradle/bg-11.png[background,size=cover]
 * No enforcement mechanism to keep build files simple and declarative
 * Arbitrary code in build scripts limit what tools can do
 
-**We want to help software developers.**
-
 === Remaining challenges [.small]#- The experiment 🧪#
 image::gradle/bg-7.png[background,size=cover]
 
@@ -22,3 +20,4 @@ Declarative Gradle
 a/k/a Developer-first builds
 
 A fundamental user experience advancement for software developers using Gradle.
+

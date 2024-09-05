@@ -1,0 +1,33 @@
+[background-color="#02303a"]
+== Declarative Configuration Language &#x1F39B;
+image::gradle/bg-7.png[background, size=cover]
+
+[.notes]
+--
+
+--
+
+=== Developer-first builds [.small]#- Declarative Configuration Language#
+image::gradle/bg-11.png[background,size=cover]
+
+* `.gradle.dcl`
+* Fully declarative - no loops, conditionals or functions
+* Limited subset of Kotlin
+** Does not rely on Kotlin compiler
+** `.gradle.dcl` look like well-written `.gradle.kts` files
+** Parsed outside the Gradle runtime
+
+=== Developer-first builds [.small]#- Performance#
+image::gradle/bg-11.png[background,size=cover]
+
+[.small]
+`./gradlew assemble`
+
+image:declarative-performance.png[width=80%]
+
+
+[.notes]
+--
+This is to be taken with a grain of salt because while we will make things slower by adding features and correctness, we have not optimized yet, and we know we can make things faster.
+This gives us a baseline and will help manage the Declarative DSL performance characteristics as we evolve the implementation.
+--

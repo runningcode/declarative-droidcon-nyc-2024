@@ -2,7 +2,7 @@
 == Agenda
 image::gradle/bg-8.png[background, size=cover]
 
-Challenges 🔥:: Maintenance and understanding
+Challenges 🔥:: Solutions and limitations
 Developer first builds &#x1f4aa;:: Vision and current state
 Demos &#x1F39B;:: Don't say it, declare it
 What's next? &#x1F52E;:: A peak into the future

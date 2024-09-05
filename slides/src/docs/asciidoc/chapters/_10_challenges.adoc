@@ -12,14 +12,13 @@ image::gradle/bg-11.png[background, size=cover]
 
 Build language 
 
-[no-bullet]
-* &#x1F44D; Highly flexible, extensible, and fully adaptable to the most complex requirements 
-* &#x1F44D; Appreciated by advanced users
+&#x1F44D; Flexible, extensible, & adaptable to complex requirements +
+&#x1F44D; Appreciated by advanced users
 
 //-
 
-* &#x1F44E; Significant learning curve 
-* &#x1F44E; Projects often look very different from one another 
+&#x1F44E; Significant learning curve +
+&#x1F44E; Projects often look very different from one another 
 
 === Challenges &#x1F525;
 image::gradle/bg-7.png[background, size=cover]
@@ -53,13 +52,13 @@ tasks.named<Test>("test") {
 [.notes]
 --
 Where does anything come from?
-Footguns
+Part of the reason this becomes a mess is... (next slide)
 --
 
 === Challenges &#x1F525;
 image::gradle/bg-7.png[background, size=cover]
 
-Simple builds configure low-level details.
+Build scripts configure low-level details.
 
 `build.gradle.kts`
 ```kotlin

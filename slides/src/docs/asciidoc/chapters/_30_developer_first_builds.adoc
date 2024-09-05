@@ -9,20 +9,40 @@ image::declarative-gradle-first-eap.png[background,size=cover]
 
 --
 
+=== Developer-first builds [.small]#- Teams#
+
+image::gradle/bg-11.png[background,size=cover]
+
+We work on this together 🤝
+
+* Multiple teams at Gradle (DSL, Software, IDE)
+* Android Studio team at Google
+* IntelliJ & Kotlin teams at JetBrains
+
+=== Developer-first builds [.small]#- Mission statement# 
+
+Gradle Build Tool is an open-source build system that automates the process of building software of any type, size, or complexity in a fast and reliable manner. 
+
+What sets Gradle Build Tool apart is its **elegant and extensible declarative build language that enables expressing any build in a clear and understandable way**.
+
+[.notes]
+--
+aspirational
+--
+
 === Developer-first builds [.small]#- Vision#
 
 image::gradle/bg-11.png[background,size=cover]
 
 > Elegant and extensible declarative build language that allows developers to describe any kind of software in a clear and understandable way.
 
-* Extensible, flexible ✅
+* Extensible ✅
 * Declarative 😞
 * Clear and understandable 😫
 
 [.notes]
 --
-Let's go back to our vision statement.
-We're extensible and flexible, but we still aspire to be declarative, clear and understandable.
+We're extensible, but we still aspire to be declarative, clear and understandable.
 --
 
 === Developer-first builds [.small]#- Key principles#
@@ -68,5 +88,23 @@ image::gradle/bg-7.png[background,size=cover]
 
 [.notes]
 --
-This is how we think about the separation
+This is how we think about the separation.
+Software developers work in a software definition.
+Build engineers create build logic to make the software definition do something.
 --
+
+=== Developer-first builds [.small]#- Disclaimers#
+image::gradle/bg-11.png[background,size=cover]
+
+* These are experiments.
+* Prototypes require bleeding edge/nightly builds. 
+* IDE features require special Android Studio nightly builds.
+* Prototypes are changing all the time and are not ready for production use.
+
+=== Developer-first builds [.small]#- Experiments#
+image::gradle/bg-11.png[background,size=cover]
+
+* Declarative Configuration Language
+* Software types
+* Excellent tooling and IDE Integration
+

@@ -9,15 +9,39 @@ image::gradle/bg-11.png[background, size=cover]
 
 Recommendations can make builds look declarative
 
+* Use Kotlin DSL for good IDE experience
 * Keep build logic in plugins
 * Give convention plugins meaningful names
 * Keep build scripts simple - condition and loop free
-* Use Kotlin DSL for good IDE experience
+
+[.notes]
+--
+For a long time, we've suggested effectively declarative build files
+that follow these recommendations.
+--
+
+=== Overcoming challenges [.small]#- Kotlin vs Groovy#
+image::gradle/bg-7.png[background, size=cover]
+
+Kotlin DSL gives better IDE support.
+
+* CMD+click navigation
+* Documentation
+* Auto-complete/code assistance
+
+Groovy DSL has dynamic parts that can only be known/checked at runtime.
+
+[.notes]
+--
+Good IDE support with static typing and APIs
+CMD+click navigation, documentation, auto-complete/code assistance
+Groovy has dynamic parts that can only be checked at runtime.
+--
 
 === Overcoming challenges [.small]#- &#x1F389;#
 image::gradle/bg-7.png[background, size=cover]
 
-Refactoring the last build into a plugin.
+Refactoring the last build script into a plugin.
 
 `com.example.java-application-conventions.gradle.kts`
 ```kotlin
@@ -70,22 +94,4 @@ dependencies {
 --
 Same example, but using the convention plugin.
 This is simpler looking, but maybe not enough.
---
-
-=== Overcoming challenges [.small]#- Kotlin vs Groovy#
-image::gradle/bg-7.png[background, size=cover]
-
-Kotlin DSL gives better IDE support.
-
-* CMD+click navigation
-* Documentation
-* Auto-complete/code assistance
-
-Groovy DSL has dynamic parts that can only be known/checked at runtime.
-
-[.notes]
---
-Good IDE support with static typing and APIs
-CMD+click navigation, documentation, auto-complete/code assistance
-Groovy has dynamic parts that can only be checked at runtime.
 --

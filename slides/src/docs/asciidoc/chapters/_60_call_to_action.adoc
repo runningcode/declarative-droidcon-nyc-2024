@@ -10,7 +10,16 @@ image::gradle/bg-4.png[background,size=cover]
 
 --
 
-=== We need your help and feedback 🙌
+=== Call to action [.small]#- Summary#
+image::gradle/bg-4.png[background,size=cover]
+
+Declarative Gradle...
+
+* is a set of experiments to demonstrate the evolution of Gradle build authoring based on existing best practices and addresses current challenges
+* consists of Declarative Configuration Language based on Kotlin and developer-first software definition based on software types
+* provides a way to improve tooling for Gradle, especially the IDE experience 
+
+=== CTA [.small]#- We need your help and feedback 🙌#
 image::gradle/bg-4.png[background,size=cover]
 
 * Read our latest link:https://blog.gradle.org/declarative-gradle-first-eap[blog post]

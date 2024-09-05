@@ -50,3 +50,16 @@ image::gradle/bg-4.png[background, size=cover]
 ** LSP language server & BSP build server
 ** plugins for both Eclipse/Buildship and Visual Studio Code
 * `gradle init` will soon support generating example builds using DCL
+
+=== What's next? [.small]#- Speculative Roadmap#
+
+* First EAP released in July
+* Second EAP (October)
+** AGP integration 
+** Addressing collected feedback
+** Further feedback from the community
+
+* 2024 EOY
+** More EAPs 
+** More features
+** Guidance from the community 

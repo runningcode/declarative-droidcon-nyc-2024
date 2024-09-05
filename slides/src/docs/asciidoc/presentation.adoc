@@ -10,17 +10,17 @@
 
 a/k/a Declarative Gradle
 
+TODO: Final graphics
+
 image::logo-android-exchange.png[width=60%, align="right"]
 
 include::chapters/_01_agenda.adoc[]
 
-include::chapters/_02_who_sterling_paul.adoc[]
-
-include::chapters/_03_who_gradle.adoc[]
+// We may want these for Droidcon
+// include::chapters/_02_who_presenters.adoc[]
+// include::chapters/_03_who_gradle.adoc[]
 
 include::chapters/_10_challenges.adoc[]
-
-// include::chapters/_15_challenges_questions.adoc[]
 
 include::chapters/_20_modern_best_practices.adoc[]
 
@@ -28,20 +28,16 @@ include::chapters/_25_remaining_challenges.adoc[]
 
 include::chapters/_30_developer_first_builds.adoc[]
 
-include::chapters/_32_developer_first_builds_current_state.adoc[]
+include::chapters/_31_developer_first_builds_dcl.adoc[]
 
-include::chapters/_33_developer_first_builds_current_state_continued.adoc[]
+include::chapters/_32_developer_first_builds_software_types.adoc[]
+
+include::chapters/_33_developer_first_builds_ide.adoc[]
 
 include::chapters/_34_demo.adoc[]
 
-// include::chapters/_36_toolability_questions.adoc[]
-
 include::chapters/_40_whats_next.adoc[]
-
-// include::chapters/_41_whats_next_continued.adoc[]
-
-include::chapters/_50_where_we_go.adoc[]
 
 include::chapters/_60_call_to_action.adoc[]
 
-include::chapters/_99_thank_you_sterling_paul.adoc[]
+include::chapters/_99_thank_you.adoc[]
