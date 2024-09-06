@@ -60,6 +60,6 @@ image::gradle/bg-4.png[background, size=cover]
 ** Further feedback from the community
 
 * 2024 EOY
-** More EAPs 
+** Another EAP
 ** More features
 ** Guidance from the community 

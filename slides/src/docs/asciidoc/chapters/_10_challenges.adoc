@@ -58,7 +58,7 @@ Part of the reason this becomes a mess is... (next slide)
 === Challenges &#x1F525;
 image::gradle/bg-7.png[background, size=cover]
 
-Build scripts configure low-level details.
+Build scripts leak low-level details.
 
 `build.gradle.kts`
 ```kotlin

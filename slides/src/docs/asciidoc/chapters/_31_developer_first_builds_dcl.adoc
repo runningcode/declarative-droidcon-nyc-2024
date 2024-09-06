@@ -31,3 +31,12 @@ image:declarative-performance.png[width=80%]
 This is to be taken with a grain of salt because while we will make things slower by adding features and correctness, we have not optimized yet, and we know we can make things faster.
 This gives us a baseline and will help manage the Declarative DSL performance characteristics as we evolve the implementation.
 --
+
+=== Developer-first builds [.small]#- Example#
+image::gradle/bg-11.png[background,size=cover]
+
+image::example-dcl.png[]
+
+image::example-kts.png[]
+
+They're the same picture.

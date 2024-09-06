@@ -25,7 +25,13 @@ image::gradle/bg-11.png[background,size=cover]
 * Currently only supported in Android Studio nightlies
 ** Syntax highlighting and code completion
 
-//-
+[.notes]
+--
+Excellent IDE support is crucial.
+--
+
+=== Tooling/IDE [.small]#- Two-way tooling#
+image::gradle/bg-11.png[background,size=cover]
 
 * Currently only supported in a standalone Gradle client
 ** Display information defined in build files and navigate back to the source
@@ -33,11 +39,5 @@ image::gradle/bg-11.png[background,size=cover]
 
 [.notes]
 --
-Excellent IDE support is crucial.
 Refactoring/mutations handled through Gradle/tooling is a big deal because this is hard to do on top of arbitrary build scripts.
 --
-
-=== Tooling/IDE [.small]#- Mutations#
-image::gradle/bg-11.png[background,size=cover]
-
-TODO: Need to talk about tooling available through Gradle client

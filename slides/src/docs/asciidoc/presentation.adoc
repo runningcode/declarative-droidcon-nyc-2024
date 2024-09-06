@@ -28,9 +28,9 @@ include::chapters/_25_remaining_challenges.adoc[]
 
 include::chapters/_30_developer_first_builds.adoc[]
 
-include::chapters/_31_developer_first_builds_dcl.adoc[]
-
 include::chapters/_32_developer_first_builds_software_types.adoc[]
+
+include::chapters/_31_developer_first_builds_dcl.adoc[]
 
 include::chapters/_33_developer_first_builds_ide.adoc[]
 

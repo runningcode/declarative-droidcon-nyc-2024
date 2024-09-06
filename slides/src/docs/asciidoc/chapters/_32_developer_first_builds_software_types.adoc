@@ -7,32 +7,34 @@ image::gradle/bg-7.png[background, size=cover]
 
 --
 
-=== Software types [.small]#- Prototypes#
-image::gradle/bg-7.png[background, size=cover]
-
-* Software types for Kotlin (KMP), JVM (Kotlin, Java) & Android
-** Software type is a high level model for the ecosystem
-* Evolution of convention plugins
-** Wraps around existing plugins 
-* Plugin application is not allowed in project DCL files
-
-[.notes]
---
-We currently have prototype plugins that represent new configuration models for KMP, JVM and Android.
---
-
 === Software types [.small]#- Higher-level model#
 image::gradle/bg-7.png[background, size=cover]
 
 * Software types work in the software developers domain language
+** Evolution of convention plugins
 ** `androidLibrary {}` vs `android {}` 
 ** No access to low-level implementation details (tasks, configurations)
 ** Context-based names vs magic names
+** Remove the need to apply plugins explicitly
 
 [.notes]
 --
 Test suites follow a similar pattern.
 Instead of adding dependencies to "testImplementation" you add your implementation dependencies inside a testing block.
+--
+
+=== Software types [.small]#- Prototypes#
+image::gradle/bg-7.png[background, size=cover]
+
+* Software types for Kotlin (KMP), JVM (Kotlin, Java) & Android
+** Software type is a high level model for the ecosystem
+** Wraps around existing plugins 
+* Intention is to discard the prototypes once the existing plugins migrate to using software types.
+
+[.notes]
+--
+as mentioned in the blog post/first EAP.
+We currently have prototype plugins that represent new configuration models for KMP, JVM and Android.
 --
 
 === Software types [.small]#- Reusable conventions#
@@ -41,21 +43,23 @@ image::gradle/bg-7.png[background, size=cover]
 * Reusable conventions support sharing common configuration 
    - Properties
    - Dependencies
-* Declared at the top-level `settings.gradle.dcl` file
+* Declared at the top-level settings file
 
 === Software types [.small]#- Example#
 image::gradle/bg-7.png[background, size=cover]
 
-`settings.gradle.dcl`
+`settings.gradle.kts`
 ```kotlin
+// <snip some setup>
 defaults {
     kotlinJvmLibrary {
         javaVersion = 21
     }
 }
 ```
-`build.gradle.dcl`
+`build.gradle.kts`
 ```kotlin
+// <snip some setup>
 kotlinJvmLibrary {
     // javaVersion comes from convention
 
