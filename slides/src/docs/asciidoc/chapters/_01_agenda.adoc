@@ -1,5 +1,5 @@
 [background-color="#02303a"]
-== Agenda
+== Declarative Gradle
 image::gradle/bg-8.png[background, size=cover]
 
 Challenges 🔥:: Solutions and limitations

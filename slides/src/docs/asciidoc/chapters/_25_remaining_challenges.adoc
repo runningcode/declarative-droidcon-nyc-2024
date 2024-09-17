@@ -1,18 +1,19 @@
 [background-color="#02303a"]
 == Remaining challenges
-image::gradle/bg-7.png[background, size=cover]
+image::gradle/bg-10.png[background, size=cover]
 
 🏃
 
 === Remaining challenges 
-image::gradle/bg-11.png[background,size=cover]
+image::gradle/bg-7.png[background,size=cover]
 
 * Build language can be hard for non-expert Gradle users to understand.
 * Little/no consistency between ecosystems and even projects in the same ecosystem.
 * No enforcement mechanism to keep build files simple and declarative
 * Arbitrary code in build scripts limit what tools can do
 
-=== Remaining challenges [.small]#- Competition 🏅#
+=== Remaining challenges [.small]#- Cross pollination 🐝#
+image::gradle/bg-7.png[background,size=cover]
 
 link:https://github.com/JetBrains/amper[Amper] - an experiment by JetBrains with similar goals
 
@@ -21,13 +22,22 @@ link:https://github.com/JetBrains/amper[Amper] - an experiment by JetBrains with
 * Main differences
 ** Amper uses YAML for configuration
 ** Amper targets Kotlin Multiplatform only
-** Amper trades flexibility/scalability for simplicity
 
-=== Remaining challenges [.small]#- Our experiment 🧪#
+=== Remaining challenges [.small]#- Our approach 🧪#
 image::gradle/bg-7.png[background,size=cover]
 
-**Declarative Gradle**
+Developer-first builds through Declarative Gradle.
 
-a/k/a Developer-first builds
+This is a fundamental advancement in user experience for software developers using Gradle.
 
-A fundamental user experience advancement for software developers using Gradle.
+[.notes]
+--
+Historically, we've prioritized the needs of build engineers over  software developers.
+--
+
+=== Remaining challenges [.small]#- Your feedback#
+image::gradle/bg-7.png[background,size=cover]
+
+We don't want to do this in a vacuum. 
+
+We'll have a link to the 2024 Developer Survey at the end of the presentation.

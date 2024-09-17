@@ -1,0 +1,43 @@
+[background-color="#02303a"]
+== Challenges &#x1F525;
+image::gradle/bg-10.png[background, size=cover]
+
+[.notes]
+--
+
+--
+
+=== Challenges &#x1F525;
+image::gradle/bg-7.png[background, size=cover]
+
+Build language 
+
+&#x1F44D; Flexible, extensible, & adaptable to complex requirements +
+&#x1F44D; Appreciated by advanced users
+
+//-
+
+&#x1F44E; Significant learning curve +
+&#x1F44E; Projects often look very different from one another 
+
+[background-color="#02303a"]
+== Overcoming challenges
+image::gradle/bg-10.png[background, size=cover]
+
+💪
+
+=== Overcoming challenges [.small]#- Best practices#
+image::gradle/bg-7.png[background, size=cover]
+
+Recommendations can make builds look declarative
+
+* Use Kotlin DSL for good IDE experience
+* Keep build logic in plugins
+* Give convention plugins meaningful names
+* Keep build scripts simple - condition and loop free
+
+[.notes]
+--
+For a long time, we've suggested effectively declarative build files
+that follow these recommendations.
+--

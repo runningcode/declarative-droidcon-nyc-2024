@@ -1,22 +1,23 @@
 [background-color="#02303a"]
 == Demos
-image::gradle/bg-1.png[background, size=cover]
+image::gradle/bg-10.png[background, size=cover]
+
 [.notes]
 --
 
 --
 
 === Demos [.small]#- Basics#
-image::gradle/bg-4.png[background,size=cover]
+image::gradle/bg-7.png[background,size=cover]
 
 video::POjnWOwWqco[youtube]
 
 === Demos [.small]#- Two-way tooling#
-image::gradle/bg-4.png[background,size=cover]
+image::gradle/bg-7.png[background,size=cover]
 
 video::0PBQ2gbQfjU[youtube]
 
 === Demos [.small]#- Mutations#
-image::gradle/bg-4.png[background,size=cover]
+image::gradle/bg-7.png[background,size=cover]
 
 video::pYuVFtfMNzM[youtube]

@@ -1,6 +1,6 @@
 [background-color="#02303a"]
 == Challenges &#x1F525;
-image::gradle/bg-7.png[background, size=cover]
+image::gradle/bg-8.png[background, size=cover]
 
 [.notes]
 --
@@ -8,7 +8,7 @@ image::gradle/bg-7.png[background, size=cover]
 --
 
 === Challenges &#x1F525;
-image::gradle/bg-11.png[background, size=cover]
+image::gradle/bg-7.png[background, size=cover]
 
 Build language 
 
@@ -19,6 +19,11 @@ Build language
 
 &#x1F44E; Significant learning curve +
 &#x1F44E; Projects often look very different from one another 
+
+[.notes]
+--
+
+--
 
 === Challenges &#x1F525;
 image::gradle/bg-7.png[background, size=cover]

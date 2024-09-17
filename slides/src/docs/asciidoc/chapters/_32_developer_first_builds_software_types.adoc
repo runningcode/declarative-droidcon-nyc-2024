@@ -1,6 +1,6 @@
 [background-color="#02303a"]
 == Software types 💠
-image::gradle/bg-7.png[background, size=cover]
+image::gradle/bg-10.png[background, size=cover]
 
 [.notes]
 --
@@ -11,7 +11,7 @@ image::gradle/bg-7.png[background, size=cover]
 image::gradle/bg-7.png[background, size=cover]
 
 * Software types work in the software developers domain language
-** Evolution of convention plugins
+** Evolution of project extensions and convention plugins
 ** `androidLibrary {}` vs `android {}` 
 ** No access to low-level implementation details (tasks, configurations)
 ** Context-based names vs magic names
@@ -20,7 +20,10 @@ image::gradle/bg-7.png[background, size=cover]
 [.notes]
 --
 Test suites follow a similar pattern.
+
 Instead of adding dependencies to "testImplementation" you add your implementation dependencies inside a testing block.
+
+e.g., Android dependencies are inside the Android block.
 --
 
 === Software types [.small]#- Prototypes#
@@ -37,45 +40,42 @@ as mentioned in the blog post/first EAP.
 We currently have prototype plugins that represent new configuration models for KMP, JVM and Android.
 --
 
-=== Software types [.small]#- Reusable conventions#
+=== Software types [.small]#- Reusable defaults#
 image::gradle/bg-7.png[background, size=cover]
 
-* Reusable conventions support sharing common configuration 
+* Reusable defaults support sharing common configuration 
    - Properties
    - Dependencies
 * Declared at the top-level settings file
 
-=== Software types [.small]#- Example#
+=== Software types [.small]#- Android Example#
 image::gradle/bg-7.png[background, size=cover]
 
 `settings.gradle.kts`
 ```kotlin
 // <snip some setup>
 defaults {
-    kotlinJvmLibrary {
-        javaVersion = 21
+    androidApplication {
+        compileSdk = 34
+        minSdk = 30
     }
 }
 ```
 `build.gradle.kts`
 ```kotlin
 // <snip some setup>
-kotlinJvmLibrary {
-    // javaVersion comes from convention
+androidApplication {
+    // SDK settings come from defaults
 
     dependencies {
-        api(project(":core:common"))
+        implementation(project(":core:common"))
     }
 }
 ```
+
+link:https://github.com/gradle/declarative-samples-android-app/blob/main/settings.gradle.dcl[See a Declarative Android app example]
 
 [.notes]
 --
 
 --
-
-=== Software types [.small]#- Android Example#
-image::gradle/bg-7.png[background, size=cover]
-
-link:https://github.com/gradle/declarative-samples-android-app/blob/main/settings.gradle.dcl[Declarative Android app]
-

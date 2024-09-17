@@ -1,12 +1,12 @@
 [background-color="#02303a"]
 == Who are we?
-image::gradle/bg-1.png[background, size=cover]
+image::gradle/bg-10.png[background, size=cover]
 
 &#x1F9D1;&#x200D;&#x1F4BB; &#x1F9D1;&#x200D;&#x1F4BB;
 
 [%notitle]
 === Sterling & Paul
-image::gradle/bg-1.png[background, size=cover]
+image::gradle/bg-7.png[background, size=cover]
 
 image::sterling_paul.jpg[width=50%]
 

@@ -1,8 +1,5 @@
+[%notitle]
 [background-color="#02303a"]
 == Thank you!
 
-Questions? Comments? Concerns?
-
-TODO: QR for developer survey
-
-// image::kotlinconf/vote.png[background, size=cover]
+image::qrcode-developer-survey.png[background, size=cover]

@@ -1,7 +1,6 @@
 [%notitle]
 [background-color="#02303a"]
 == Developer-first builds &#x1F39B;
-
 image::declarative-gradle-first-eap.png[background,size=cover]
 
 [.notes]
@@ -10,8 +9,7 @@ image::declarative-gradle-first-eap.png[background,size=cover]
 --
 
 === Developer-first builds [.small]#- Teams#
-
-image::gradle/bg-11.png[background,size=cover]
+image::gradle/bg-7.png[background,size=cover]
 
 We work on this together 🤝
 
@@ -20,6 +18,7 @@ We work on this together 🤝
 * IntelliJ & Kotlin teams at JetBrains
 
 === Developer-first builds [.small]#- Mission statement# 
+image::gradle/bg-7.png[background,size=cover]
 
 Gradle Build Tool is an open-source build system that automates the process of building software of any type, size, or complexity in a fast and reliable manner. 
 
@@ -31,8 +30,7 @@ aspirational
 --
 
 === Developer-first builds [.small]#- Vision#
-
-image::gradle/bg-11.png[background,size=cover]
+image::gradle/bg-7.png[background,size=cover]
 
 > Elegant and extensible declarative build language that allows developers to describe any kind of software in a clear and understandable way.
 
@@ -62,7 +60,7 @@ We want tooling to be just as good/better.
 --
 
 === Developer-first builds [.small]#- Users#
-image::gradle/bg-11.png[background,size=cover]
+image::gradle/bg-7.png[background,size=cover]
 
 * Software Developers - Majority in most teams
 ** [.small]#Improve software by shipping features, fixing bugs ...#
@@ -96,15 +94,15 @@ Build engineers create build logic to make the software definition do something.
 --
 
 === Developer-first builds [.small]#- Disclaimers#
-image::gradle/bg-11.png[background,size=cover]
+image::gradle/bg-7.png[background,size=cover]
 
-* These are experiments.
-* Prototypes require bleeding edge/nightly builds. 
+* These are _experiments_ and require bleeding edge/nightly builds. 
 * IDE features require special Android Studio nightly builds.
+* Some IDE-like features are demonstrated outside the IDE. 
 * Prototypes are changing all the time and are not ready for production use.
 
 === Developer-first builds [.small]#- Experiments#
-image::gradle/bg-11.png[background,size=cover]
+image::gradle/bg-7.png[background,size=cover]
 
 * Software types
 * Declarative Configuration Language with excellent tooling

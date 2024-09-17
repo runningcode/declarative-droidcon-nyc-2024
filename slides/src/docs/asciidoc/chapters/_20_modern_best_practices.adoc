@@ -1,18 +1,18 @@
 [background-color="#02303a"]
 == Overcoming challenges
-image::gradle/bg-7.png[background, size=cover]
+image::gradle/bg-8.png[background, size=cover]
 
 💪
 
 === Overcoming challenges [.small]#- Best practices#
-image::gradle/bg-11.png[background, size=cover]
+image::gradle/bg-7.png[background, size=cover]
 
 Recommendations can make builds look declarative
 
-* Use Kotlin DSL for good IDE experience
 * Keep build logic in plugins
 * Give convention plugins meaningful names
 * Keep build scripts simple - condition and loop free
+* Use Kotlin DSL for good IDE experience
 
 [.notes]
 --

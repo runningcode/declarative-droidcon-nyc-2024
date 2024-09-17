@@ -1,42 +1,54 @@
 [background-color="#02303a"]
 == What's next? &#x1F52E;
-image::gradle/bg-4.png[background,size=cover]
+image::gradle/bg-10.png[background,size=cover]
 
 A peak into the future
 
 === What's next? [.small]#- AGP support#
-image::gradle/bg-4.png[background,size=cover]
+image::gradle/bg-7.png[background,size=cover]
 
-* Working with Android to get AGP into DCL
+* Working with Android to get AGP extension into DCL
 * Simple existing DSLs will "just work"
 * Some new DSLs will be added to support DCL
+
+[.notes]
+--
+Need work for
 ** Named domain object containers
 ** Enums
+--
 
 === What's next? [.small]#- Composability#
-image::gradle/bg-4.png[background,size=cover]
+image::gradle/bg-7.png[background,size=cover]
 
-* Composability and extensibility very important
-** There is a small number of base software types
+* Composability and extensibility very important for build engineers
+** Expect each build will have a small number of software types
 ** Additional, optional features can be "mixed-in" to a software type
+
+[.notes]
+--
+How this works is to be designed.
+
 * e.g., `androidApplication` does not need Compose or Hilt built-in
 ** Enabling compose applies the appropriate plugin and adds to the software type
 ** Defaults for Compose/Hilt can be defined and reused across software types
+--
 
 === What's next? [.small]#- Migrations#
-image::gradle/bg-4.png[background,size=cover]
+image::gradle/bg-7.png[background,size=cover]
 
 * You can mix imperative and declarative in a build
 * Software-types will be usable from imperative DSLs
 * You can define defaults in settings and apply them in DCL/non-DCL files
 * Gradle imperative DSLs don't go away
-* Syntax overlap between DCL and KTS files make it easier to prepare
-* Using convention plugins as software types will prepare for migration
 
 [.notes]
 --
-Open questions:
+* Syntax overlap between DCL and KTS files make it easier to prepare
+* Using convention plugins as software types will prepare for migration
 
+Open questions:
+* Still experimental, but exploring options
 * When will ecosystem plugins be ready/have migrated?
 * How will plugin authors adapt/migrate?
 ** Same programming/annotation model as project extensions/tasks
@@ -44,22 +56,21 @@ Open questions:
 --
 
 === What's next? [.small]#- Other#
-image::gradle/bg-4.png[background, size=cover]
+image::gradle/bg-7.png[background, size=cover]
 
 * Our IDE team is exploring
 ** LSP language server & BSP build server
 ** plugins for both Eclipse/Buildship and Visual Studio Code
 * `gradle init` will soon support generating example builds using DCL
 
-=== What's next? [.small]#- Speculative Roadmap#
+=== What's next? [.small]#- Roadmap#
+image::gradle/bg-7.png[background,size=cover]
 
 * First EAP released in July
+** See blog post
+** Some feedback from the community
 * Second EAP (October)
 ** AGP integration 
-** Addressing collected feedback
-** Further feedback from the community
+** Collecting more feedback from the community
+* Likely another EAP around end of year
 
-* 2024 EOY
-** Another EAP
-** More features
-** Guidance from the community 
