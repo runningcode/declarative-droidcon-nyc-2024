@@ -12,12 +12,22 @@ image::gradle/bg-11.png[background,size=cover]
 * No enforcement mechanism to keep build files simple and declarative
 * Arbitrary code in build scripts limit what tools can do
 
-=== Remaining challenges [.small]#- The experiment 🧪#
+=== Remaining challenges [.small]#- Competition 🏅#
+
+link:https://github.com/JetBrains/amper[Amper] - an experiment by JetBrains with similar goals
+
+* We work closely together, share progress and results
+* Attempts to address some of the remaining challenges
+* Main differences
+** Amper uses YAML for configuration
+** Amper targets Kotlin Multiplatform only
+** Amper trades flexibility/scalability for simplicity
+
+=== Remaining challenges [.small]#- Our experiment 🧪#
 image::gradle/bg-7.png[background,size=cover]
 
-Declarative Gradle
+**Declarative Gradle**
 
 a/k/a Developer-first builds
 
 A fundamental user experience advancement for software developers using Gradle.
-
