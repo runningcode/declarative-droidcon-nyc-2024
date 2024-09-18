@@ -4,6 +4,19 @@ image::gradle/bg-10.png[background,size=cover]
 
 A peak into the future
 
+=== What's next? [.small]#- Roadmap#
+image::gradle/bg-7.png[background,size=cover]
+
+* First EAP released in July
+** See blog post
+** Some feedback from the community
+* Second EAP (October)
+** AGP integration 
+** Composability experiments
+** Another round of community feedback
+* Third EAP around end of year
+** Content to be determined
+
 === What's next? [.small]#- Android support#
 image::gradle/bg-7.png[background,size=cover]
 
@@ -63,15 +76,4 @@ image::gradle/bg-7.png[background, size=cover]
 ** LSP language server & BSP build server
 ** plugins for both Eclipse/Buildship and Visual Studio Code
 * `gradle init` will soon support generating example builds using DCL
-
-=== What's next? [.small]#- Roadmap#
-image::gradle/bg-7.png[background,size=cover]
-
-* First EAP released in July
-** See blog post
-** Some feedback from the community
-* Second EAP (October)
-** AGP integration 
-** Collecting more feedback from the community
-* Likely another EAP around end of year
 

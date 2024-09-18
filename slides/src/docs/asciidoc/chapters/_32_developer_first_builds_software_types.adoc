@@ -31,7 +31,7 @@ androidApplication {
 --
 Test suites follow a similar pattern.
 
-Instead of adding dependencies to "testImplementation" you add your implementation dependencies inside a testing block.
+Instead of adding dependencies to a global container, you add dependencies into a context.
 
 e.g., Android dependencies are inside the Android block.
 --

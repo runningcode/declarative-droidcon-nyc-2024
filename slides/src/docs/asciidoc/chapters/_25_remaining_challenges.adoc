@@ -21,12 +21,5 @@ This is a fundamental advancement in user experience for software developers usi
 
 [.notes]
 --
-Historically, we've prioritized the needs of build engineers over  software developers.
+Historically, we've prioritized the needs of advanced users over new users.
 --
-
-=== Remaining challenges [.small]#- Your feedback#
-image::gradle/bg-7.png[background,size=cover]
-
-We don't want to do this in a vacuum. 
-
-We'll have a link to the 2024 Developer Survey at the end of the presentation.

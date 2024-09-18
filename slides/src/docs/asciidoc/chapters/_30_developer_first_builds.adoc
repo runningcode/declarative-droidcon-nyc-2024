@@ -119,5 +119,4 @@ image::gradle/bg-7.png[background,size=cover]
 image::gradle/bg-7.png[background,size=cover]
 
 * Software types
-* Declarative Configuration Language with excellent tooling
-
+* Declarative Configuration Language with integrated tooling

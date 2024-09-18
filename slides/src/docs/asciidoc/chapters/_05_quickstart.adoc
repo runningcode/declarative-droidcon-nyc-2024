@@ -20,6 +20,11 @@ Build language
 &#x1F44E; Significant learning curve +
 &#x1F44E; Projects often look very different from one another 
 
+[.notes]
+--
+Gradle's flexibility is valued by advanced users, but becomes a challenge for new users
+--
+
 [background-color="#02303a"]
 == Overcoming challenges
 image::gradle/bg-10.png[background, size=cover]
@@ -38,6 +43,6 @@ Recommendations can make builds look declarative
 
 [.notes]
 --
-For a long time, we've suggested effectively declarative build files
+For a long time, we've suggested users use declarative build files
 that follow these recommendations.
 --

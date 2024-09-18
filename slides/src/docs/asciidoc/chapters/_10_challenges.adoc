@@ -22,7 +22,7 @@ Build language
 
 [.notes]
 --
-
+Gradle's flexibility is valued by advanced users, but becomes a challenge for new users
 --
 
 === Challenges &#x1F525;
