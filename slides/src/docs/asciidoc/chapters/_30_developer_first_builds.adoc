@@ -15,7 +15,55 @@ We work on this together 🤝
 
 * Multiple teams at Gradle (DSL, Software, IDE)
 * Android Studio team at Google
-* IntelliJ & Kotlin teams at JetBrains
+* Multiple teams at JetBrains
+
+=== Developer-first builds [.small]#- Cross pollination 🐝#
+image::gradle/bg-7.png[background,size=cover]
+
+link:https://github.com/JetBrains/amper[Amper] - an experiment by JetBrains with similar goals
+
+* Amper uses YAML for configuration
+* Amper focuses on Kotlin Multiplatform 
+* Amper works in JetBrains IDEs
+
+[.notes]
+--
+We're in touch with the Amper team too.
+--
+
+=== Developer-first builds [.small]#- Users#
+image::gradle/bg-7.png[background,size=cover]
+
+* Software Developers - Majority in most teams
+** [.small]#Improve software by shipping features, fixing bugs ...#
+* Build Engineers - Frequent in larger teams
+** [.small]#Maintain the build, make developers productive#
+* 🎩 ↔ 🧢 - Frequent in smaller teams
+** [.small]#Who's the Gradle expert?#
+
+[.notes]
+--
+Who are we talking about?
+--
+
+=== Developer-first builds [.small]#- Definitions#
+image::gradle/bg-7.png[background,size=cover]
+
+* Software Definition
+** _What_ needs to be built
+** Kind of software, languages, target platforms
+** Dependencies, toolchains, quality checks etc...
+* Build Logic
+** _How_ the software will be built
+** Adds new capabilities, integrate tools
+** Supplies convention to the software definition
+
+[.notes]
+--
+This is how we think about the separation.
+Software developers work in a software definition.
+Build engineers create build logic to make the software definition do something.
+--
 
 === Developer-first builds [.small]#- Mission statement# 
 image::gradle/bg-7.png[background,size=cover]
@@ -57,40 +105,6 @@ image::gradle/bg-7.png[background,size=cover]
 We want to help software developers.
 we want to keep the flexibility that people expect from Gradle.
 We want tooling to be just as good/better.
---
-
-=== Developer-first builds [.small]#- Users#
-image::gradle/bg-7.png[background,size=cover]
-
-* Software Developers - Majority in most teams
-** [.small]#Improve software by shipping features, fixing bugs ...#
-* Build Engineers - Frequent in larger teams
-** [.small]#Maintain the build, make developers productive#
-* 🎩 ↔ 🧢 - Frequent in smaller teams
-** [.small]#Who's the Gradle expert?#
-
-[.notes]
---
-Who are we talking about?
---
-
-=== Developer-first builds [.small]#- Definitions#
-image::gradle/bg-7.png[background,size=cover]
-
-* Software Definition
-** _What_ needs to be built
-** Kind of software, languages, target platforms
-** Dependencies, toolchains, quality checks etc...
-* Build Logic
-** _How_ the software will be built
-** Adds new capabilities, integrate tools
-** Supplies convention to the software definition
-
-[.notes]
---
-This is how we think about the separation.
-Software developers work in a software definition.
-Build engineers create build logic to make the software definition do something.
 --
 
 === Developer-first builds [.small]#- Disclaimers#

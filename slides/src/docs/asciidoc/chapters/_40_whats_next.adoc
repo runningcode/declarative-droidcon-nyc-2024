@@ -4,12 +4,13 @@ image::gradle/bg-10.png[background,size=cover]
 
 A peak into the future
 
-=== What's next? [.small]#- AGP support#
+=== What's next? [.small]#- Android support#
 image::gradle/bg-7.png[background,size=cover]
 
-* Working with Android to get AGP extension into DCL
-* Simple existing DSLs will "just work"
-* Some new DSLs will be added to support DCL
+* Working with Android to get Android Gradle Plugin (AGP) extensions into DCL
+* Simple things will "just work"
+* AGP extensions will be enhanced to support DCL in some cases
+* DCL will have new features to support existing AGP extensions
 
 [.notes]
 --
