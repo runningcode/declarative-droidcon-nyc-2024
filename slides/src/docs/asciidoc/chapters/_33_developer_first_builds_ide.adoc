@@ -13,7 +13,7 @@ image::gradle/bg-7.png[background,size=cover]
 * Currently only supported in Android Studio nightlies
 ** Syntax highlighting and code completion
 
-video::POjnWOwWqco[youtube]
+video::SmHzeoQfyxo[youtube]
 
 [.notes]
 --
@@ -26,14 +26,14 @@ image::gradle/bg-7.png[background,size=cover]
 * Currently only supported in a standalone Gradle client
 ** Display information defined in build files and navigate back to the source
 
-video::0PBQ2gbQfjU[youtube]
+video::4P0GmcmkUog[youtube]
 
 === Tooling/IDE [.small]#- Two-way tooling (cont)#
 image::gradle/bg-7.png[background,size=cover]
 
 * Refactoring/mutations
 
-video::pYuVFtfMNzM[youtube]
+video::NNVvhNFS03M[youtube]
 
 [.notes]
 --
