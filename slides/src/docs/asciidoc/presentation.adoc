@@ -12,8 +12,8 @@
 include::chapters/_01_agenda.adoc[]
 
 // TODO: We want these for Droidcon
-// include::chapters/_02_who_presenters.adoc[]
-// include::chapters/_03_who_gradle.adoc[]
+include::chapters/_02_who_presenters.adoc[]
+include::chapters/_03_who_gradle.adoc[]
 
 // TODO: We should remove this and re-enable 10-20 for Droidcon
 include::chapters/_05_quickstart.adoc[]
