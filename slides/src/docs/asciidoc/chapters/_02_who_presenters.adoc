@@ -8,7 +8,7 @@ image::gradle/bg-10.png[background, size=cover]
 === Sterling & Paul
 image::gradle/bg-7.png[background, size=cover]
 
-image::sterling_paul.jpg[width=50%]
+image::inaki_nelson.jpeg[width=50%]
 
 [cols="<.<5,<.<5",frame=none,grid=none]
 |===
@@ -17,13 +17,11 @@ a|
 ----
 ​
 speaker {
-  name = "Paul Merlin"
+  name = "Inaki Villar"
   company = "Gradle"
-  joined = 2015
-  currently = "Declarative Gradle"
-  previously = "Performance, Kotlin DSL, Configuration Cache"
-  github = "eskatos"
-  mastodon = "@eskatos@mastodon.social"
+  joined = 2022
+  currently = "Senior Solutions Engineer"
+  github = "cdsap"
 }
 ​
 ----
@@ -33,13 +31,11 @@ a|
 ----
 ​
 speaker {
-  name = "Sterling Greene"
-  company = "Gradle"
-  joined = 2014
-  currently = "Declarative Gradle"
-  previously = "JVM, Core, Native, Build Cache"
-  github = "big-guy"
-  x = "@argfile"
+  name = "Nelson Osacky"
+  company = "Formerly Gradle"
+  joined = 2020
+  previously = "Lead Solutions Engineer"
+  github = "runningcode"
 }
 ​
 ----
