@@ -98,7 +98,7 @@ image::gradle/bg-7.png[background,size=cover]
 image::dpeu/cover.png[width=60%]
 
 * Free courses at https://dpeuniversity.gradle.com/app[dpeuniversity.gradle.com]
-* Courses on Develocity and Maven
+* Courses on Develocity, Gradle, and Maven
 
 [%notitle]
 === Gradle Build Tool
