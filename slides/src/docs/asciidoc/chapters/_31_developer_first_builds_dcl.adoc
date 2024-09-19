@@ -11,10 +11,12 @@ image::gradle/bg-10.png[background, size=cover]
 image::gradle/bg-7.png[background,size=cover]
 
 * New extension `.gradle.dcl`
+* Fully declarative - no loops, conditionals or functions
 * Limited subset of Kotlin
-** Familiar syntax
-** Fully declarative - no loops, conditionals or functions
 ** `.gradle.dcl` look like well-written `.gradle.kts` file
+** `.gradle.dcl` does not rely on Kotlin compiler 
+** DCL is a configuration language, not a programming language
+
 
 [.notes]
 --
@@ -37,52 +39,4 @@ image:declarative-performance.png[width=80%]
 This is to be taken with a grain of salt because while we will make things slower by adding features and correctness, we have not optimized yet, and we know we can make things faster.
 
 This gives us a baseline and will help manage the Declarative DSL performance characteristics as we evolve the implementation.
---
-
-=== Developer-first builds [.small]#- Performance#
-image::gradle/bg-7.png[background,size=cover]
-
-* Inherently faster
-** `.gradle.dcl` does not rely on Kotlin compiler 
-** DCL is a configuration language, not a programming language
-
-=== Developer-first builds [.small]#- Example#
-image::gradle/bg-7.png[background,size=cover]
-
-`build.gradle.dcl`
-```kotlin
-<1>
-
-androidApplication { <2>
-    namespace = "org.example.app" <3>
-
-    dependencies { <4>
-        implementation("org.apache.commons:commons-text:1.11.0") <5>
-        implementation(project(":utilities"))
-    }
-}
-```
-<1> Notice that there are no plugins.
-<2> This is the type of software this project will produce.
-<3> Configuring a simple property.
-<4> Configuring a nested block.
-<5> Type-safe custom dependencies block.
-
-[.notes]
---
-
---
-
-=== Developer-first builds [.small]#- DCL vs KTS#
-image::gradle/bg-7.png[background,size=cover]
-
-image::example-dcl.png[]
-
-image::example-kts.png[]
-
-[.notes]
---
-* DCL is subset of KTS - means you do not need to learn a new language
-* Software types are available to KTS, so you can write everything like in DCL while still having access to more powerful things. 
-* We're still exploring migration paths. Similarity gives us lots of options. 
 --

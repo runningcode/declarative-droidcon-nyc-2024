@@ -11,54 +11,29 @@ image::gradle/bg-10.png[background, size=cover]
 image::gradle/bg-7.png[background, size=cover]
 
 * Software types work in the software developers domain language
-* Evolution of project extensions and convention plugins
-* Software types are available in Groovy and Kotlin DSLs
 * `androidApplication {}` vs `android {}` 
+* Evolution of project extensions and convention plugins
+** No access to low-level implementation details (tasks, configurations)
+** Remove the need to apply plugins explicitly
+* Software types are available in Groovy and Kotlin DSLs
 
-`build.gradle.kts`
-```kotlin
-// <snip some setup>
-androidApplication {
-    // SDK settings come from defaults
 
-    dependencies {
-        implementation(project(":core:common"))
-    }
-}
-```
-
-[.notes]
---
-Test suites follow a similar pattern.
-
-Instead of adding dependencies to a global container, you add dependencies into a context.
-
-e.g., Android dependencies are inside the Android block.
---
-
-=== Software types [.small]#- Higher-level model (cont)#
+=== Software types [.small]#- Progress#
 image::gradle/bg-7.png[background, size=cover]
 
-* No access to low-level implementation details (tasks, configurations)
-* Context-based names vs magic names
-* Remove the need to apply plugins explicitly
-
-`build.gradle.kts`
-```kotlin
-// <snip some setup>
-androidApplication {
-    // SDK settings come from defaults
-
-    dependencies {
-        implementation(project(":core:common"))
-    }
-}
-```
+* Gradle created prototype plugins Kotlin (KMP), JVM (Kotlin, Java) & Android
+** Creates a software type for the ecosystem
+** Wraps around existing plugins 
+** Intention is to discard the prototypes 
+* Software types for Android will be provided by the Android Gradle Plugin (AGP) soon
+** Reuses existing `android` project extensions as software types
 
 [.notes]
 --
-
+as mentioned in the blog post/first EAP.
+We currently have prototype plugins that represent new configuration models for KMP, JVM and Android.
 --
+
 
 === Software types [.small]#- Reusable defaults#
 image::gradle/bg-7.png[background, size=cover]
@@ -109,20 +84,4 @@ link:https://github.com/gradle/declarative-samples-android-app/blob/main/setting
 [.notes]
 --
 
---
-
-=== Software types [.small]#- Progress#
-image::gradle/bg-7.png[background, size=cover]
-
-* Gradle created prototype plugins Kotlin (KMP), JVM (Kotlin, Java) & Android
-** Creates a software type for the ecosystem
-** Wraps around existing plugins 
-** Intention is to discard the prototypes 
-* Software types for Android will be provided by the Android Gradle Plugin (AGP) soon
-** Reuses existing `android` project extensions as software types
-
-[.notes]
---
-as mentioned in the blog post/first EAP.
-We currently have prototype plugins that represent new configuration models for KMP, JVM and Android.
 --
