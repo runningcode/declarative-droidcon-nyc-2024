@@ -4,6 +4,8 @@ image::gradle/bg-10.png[background, size=cover]
 
 [.notes]
 --
+Software types resemble what we can achieve today with convention plugins. Many companies apply a disciplined hierarchy of convention plugins to model their build configuration requirements. However, as we discussed, this approach still doesn’t enforce correctness from the build script side.
+The other part of the experiment involves a new configuration language called Declarative Configuration Language (DCL)
 
 --
 
@@ -13,30 +15,16 @@ image::gradle/bg-7.png[background,size=cover]
 * New extension `.gradle.dcl`
 * Fully declarative - no loops, conditionals or functions
 * Limited subset of Kotlin
-** `.gradle.dcl` look like well-written `.gradle.kts` file
-** `.gradle.dcl` does not rely on Kotlin compiler 
+** DCL looks like well-written `.gradle.kts` file
+** DCL does not rely on Kotlin compiler 
 ** DCL is a configuration language, not a programming language
 
 
 [.notes]
 --
-Reusing Kotlin leaves open the opportunity to converge 
-* on strict mode for Kotlin DSL
-* two languages, but shared tooling
+DCL is purely declarative—no conditions, no loops, and only one way to accomplish each task.
+DCL is a small subset of the Kotlin language, so the syntax is familiar, and it retains Kotlin’s best features. A well-written Kotlin DSL file looks similar to a DCL file. Because DCL is a configuration language, not a programming language, parsing and evaluating it is inherently faster.
+This distinction—avoiding the Kotlin compiler and directly parsing and evaluating configuration files—significantly impacts performance.
+For instance, in a comparison of configuration durations for a 500-module project executing a clean build, DCL showed a promising reduction in configuration time. However, please take this data with a grain of salt; as the evaluation and parser components become more complex, you can expect these configuration times to increase slightly. The Build Tool team has not yet optimized this phase, but the results look promising.
 --
 
-=== Developer-first builds [.small]#- Performance#
-image::gradle/bg-7.png[background,size=cover]
-
-[.small]
-`./gradlew assemble`
-
-image:declarative-performance.png[width=80%]
-
-
-[.notes]
---
-This is to be taken with a grain of salt because while we will make things slower by adding features and correctness, we have not optimized yet, and we know we can make things faster.
-
-This gives us a baseline and will help manage the Declarative DSL performance characteristics as we evolve the implementation.
---

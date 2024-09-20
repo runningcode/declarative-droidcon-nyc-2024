@@ -1,7 +1,7 @@
 :source-highlighter: highlightjs
 :highlightjs-languages: java, groovy, kotlin, toml, json, xml, properties, shell
 // TODO: We should use a different logo for Droidcon
-:title-slide-background-image: logo-android-exchange.png
+:title-slide-background-image: droidcon2.png
 :title-slide-background-size: cover
 :title-slide-background-color: #02303a
 :hide-uri-scheme:

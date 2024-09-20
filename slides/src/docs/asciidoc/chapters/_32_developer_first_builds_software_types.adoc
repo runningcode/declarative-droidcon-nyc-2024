@@ -7,15 +7,37 @@ image::gradle/bg-10.png[background, size=cover]
 
 --
 
+
+
 === Software types [.small]#- Higher-level model#
 image::gradle/bg-7.png[background, size=cover]
 
 * Software types work in the software developers domain language
 * `androidApplication {}` vs `android {}` 
+
+[.notes]
+--
+A software type is a higher-level abstraction that hides the implementation details of the build configuration. It provides developers with a model defining what is needed to build the project, allowing them to focus on development. 
+What is needed to build the project is defined by the domain of the project, if I’m working in Android project with different modules, I could provide Software types that represent an androidLibrary, or android application.
+--
+
+=== Software types [.small]#- Higher-level model#
+image::gradle/bg-7.png[background, size=cover]
+
 * Evolution of project extensions and convention plugins
 ** No access to low-level implementation details (tasks, configurations)
 ** Remove the need to apply plugins explicitly
 * Software types are available in Groovy and Kotlin DSLs
+
+[.notes]
+--
+From Gradle’s perspective, you can think of software types as a combination of project extensions and an evolution of convention plugins.
+Key principles include:
+Removing access to low-level Gradle implementation details, tasks, and configurations.
+Eliminating the need to apply plugins explicitly in the build script.
+Software types are available in Groovy and Kotlin Dsk
+--
+
 
 
 === Software types [.small]#- Progress#
@@ -30,8 +52,7 @@ image::gradle/bg-7.png[background, size=cover]
 
 [.notes]
 --
-as mentioned in the blog post/first EAP.
-We currently have prototype plugins that represent new configuration models for KMP, JVM and Android.
+This concept may seem abstract, but Gradle already offers prototypes for Kotlin JVM and Android, where software types have been created for these ecosystems. The idea is to wrap existing plugins and guide the configuration of these plugins.
 --
 
 
@@ -43,16 +64,10 @@ image::gradle/bg-7.png[background, size=cover]
    - Dependencies
 * Declared at the top-level settings file
 
-`settings.gradle.kts`
-```kotlin
-// <snip some setup>
-defaults {
-    androidApplication {
-        compileSdk = 34
-        minSdk = 30
-    }
-}
-```
+[.notes]
+--
+An interesting implementation of software types is defining reusable conventions. This allows you to specify common configurations for dependencies or properties at the top-level settings.gradle file and share them across various software type usages in different modules.
+--
 
 === Software types [.small]#- Android Example#
 image::gradle/bg-7.png[background, size=cover]
@@ -78,8 +93,6 @@ androidApplication {
     }
 }
 ```
-
-link:https://github.com/gradle/declarative-samples-android-app/blob/main/settings.gradle.dcl[See a Declarative Android app example]
 
 [.notes]
 --
